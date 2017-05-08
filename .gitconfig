@@ -183,3 +183,8 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[user]
+	signingkey = 1A98B43A955F4274
+	email = egcjones@gmail.com
+[gpg]
+	program = gpg2
