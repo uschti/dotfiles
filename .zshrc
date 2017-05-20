@@ -85,6 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.aliases
 
+# Add yarn global to path
+export PATH=$PATH:$(yarn global bin)
+
 # Virtualenvwrapper setup
 export WORKON_HOME=~/.venvs
 source /usr/local/bin/virtualenvwrapper.sh
@@ -101,5 +104,12 @@ export GPG_TTY=$(tty)
 # Custom path
 export DEVEL=$HOME/Development
 
+# AndroidSDK path
+export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
+
+# TheFuck
+eval "$(thefuck --alias)"
+
 # Cowsay fortune!
 cowsay $(fortune -a)
+
