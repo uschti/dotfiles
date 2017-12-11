@@ -90,6 +90,7 @@ export PATH=$PATH:$(yarn global bin)
 
 # Virtualenvwrapper setup
 export WORKON_HOME=~/.venvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
 source /usr/local/bin/virtualenvwrapper.sh
 
 # 'z' setup
@@ -110,6 +111,12 @@ export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
 # TheFuck
 eval "$(thefuck --alias)"
 
+# Add "oc" command completion
+source <(oc completion zsh)
+
 # Cowsay fortune!
 cowsay $(fortune -a)
 
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
