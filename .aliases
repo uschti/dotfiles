@@ -10,6 +10,7 @@ alias -- -="cd -"
 
 # Shortcuts
 alias d="cd ~/Development"
+alias dgo="cd ~/go/src"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias g="git"
@@ -161,3 +162,6 @@ alias reload="exec $SHELL -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Terraform
+alias tf=terraform
