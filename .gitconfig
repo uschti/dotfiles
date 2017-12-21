@@ -184,7 +184,7 @@
 
 	insteadOf = "gist:"
 [user]
-	signingkey = 1A98B43A955F4274
+	signingkey = E34E7F21D7272734
 	email = egcjones@gmail.com
 [gpg]
 	program = gpg

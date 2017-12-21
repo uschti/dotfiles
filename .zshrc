@@ -90,7 +90,7 @@ export PATH=$PATH:$(yarn global bin)
 
 # Virtualenvwrapper setup
 export WORKON_HOME=~/.venvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 
 # 'z' setup
