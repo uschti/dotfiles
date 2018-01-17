@@ -105,6 +105,9 @@ export GPG_TTY=$(tty)
 # Custom path
 export DEVEL=$HOME/Development
 
+# Custom Jupyter Notebook Directory
+export JUPYTER_NB_DIR=$HOME/OneDrive/Jupyter/Notebooks
+
 # AndroidSDK path
 export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
 
