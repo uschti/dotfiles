@@ -207,13 +207,13 @@ function a() {
 	fi;
 }
 
-# `v` with no arguments opens the current directory in Vim, otherwise opens the
+# `n` with no arguments opens the current directory in Nano, otherwise opens the
 # given location
 function v() {
 	if [ $# -eq 0 ]; then
-		vim .;
+		nano .;
 	else
-		vim "$@";
+		nano "$@";
 	fi;
 }
 
@@ -224,6 +224,16 @@ function o() {
 		open .;
 	else
 		open "$@";
+	fi;
+}
+
+# `t` with no arguments opens the current directory in Nano, otherwise opens the
+# given location
+function v() {
+	if [ $# -eq 0 ]; then
+		open /Applications/TextWrangler.app .;
+	else
+		open /Applications/TextWrangler.app "$@";
 	fi;
 }
 
